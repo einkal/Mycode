@@ -2,10 +2,15 @@ package com.scaler.lab.Entity.user;
 
 public class Member extends User {
     private  int borrowedBooksCount;
-    private final int MAX_BORROW_LIMIT = 5;
+    private final static int MAX_BORROW_LIMIT = 5;
 
-    Member(String name, String contactInfo) {
+    public Member(){
+        super();
+        borrowedBooksCount = 0;
+    }
+    public Member(String name, String contactInfo) {
         super(name, contactInfo);
+        borrowedBooksCount = 0;
     }
 
     @Override
@@ -20,4 +25,10 @@ public class Member extends User {
     public boolean canBorrowBooks() {
         return this.borrowedBooksCount < MAX_BORROW_LIMIT;
     }
+
+    @Override
+    public void returnBooks() {
+        borrowedBooksCount--;
+    }
+
 }

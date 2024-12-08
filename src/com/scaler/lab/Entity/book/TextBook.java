@@ -6,6 +6,12 @@ public class TextBook extends Book {
 
     @Override
     public void displayBookDetails() {
+        System.out.println("Book Details");
+        System.out.println("Subject: " + subject);
+        System.out.println("Edition: " + edition);
+        System.out.println("Title: " + getTitle());
+        System.out.println("Author: " + getAuthor());
+        System.out.println("ISBN: " + getIsbn());
 
     }
 
@@ -22,8 +28,8 @@ public class TextBook extends Book {
         this.edition = edition;
     }
 
-    public TextBook(String isbn, String title, String author, String subject, int edition) {
-        super(isbn, title, author );
+    public TextBook(String isbn, String title, String author, String subject, int edition, BOOKTYPE bookType) {
+        super(isbn, title, author, bookType );
         this.subject = subject;
         this.edition = edition;
     }
