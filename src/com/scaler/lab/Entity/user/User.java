@@ -1,4 +1,4 @@
-package com.scaler.lab.Entity;
+package com.scaler.lab.Entity.user;
 
 public abstract class User {
         private String userId;
@@ -6,16 +6,16 @@ public abstract class User {
         private String contactInfo;
         private static int totalUsers;
 
-        User() {
+        public User() {
             this.userId = String.valueOf(generateUniqueId());
         }
 
-        User(String name, String contactInfo) {
+        public User(String name, String contactInfo) {
             this.name = name;
             this.contactInfo = contactInfo;
         }
 
-        User(User user) {
+        public User(User user) {
             this.userId = String.valueOf(generateUniqueId());
             this.name = user.name;
             this.contactInfo = user.contactInfo;

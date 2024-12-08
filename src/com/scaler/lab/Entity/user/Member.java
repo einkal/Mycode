@@ -1,6 +1,6 @@
-package com.scaler.lab.Entity;
+package com.scaler.lab.Entity.user;
 
-public class Member extends  User{
+public class Member extends User {
     private  int borrowedBooksCount;
     private final int MAX_BORROW_LIMIT = 5;
 

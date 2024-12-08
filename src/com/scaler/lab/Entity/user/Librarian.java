@@ -1,6 +1,8 @@
-package com.scaler.lab.Entity;
+package com.scaler.lab.Entity.user;
 
-public class Librarian extends User{
+import com.scaler.lab.Entity.book.Book;
+
+public class Librarian extends User {
 
     private String employeeNumber;
 
