@@ -1,4 +1,9 @@
 package com.scaler.lab.Entity;
 
-public class Book {
+public abstract class Book implements Lendable{
+    private String isbn;
+    private String title;
+    private String author;
+    private boolean isAvailable;
+
 }
