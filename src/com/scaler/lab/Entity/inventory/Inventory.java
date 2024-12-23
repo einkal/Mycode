@@ -36,3 +36,4 @@ public class Inventory<T extends Item> {
         return new ArrayList<T>(items.values());
     }
 }
+
