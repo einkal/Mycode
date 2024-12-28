@@ -22,4 +22,7 @@ public class LRUCache {
         this.map.put(item.getId(), item);
     }
 
+    public LinkedHashMap<String, Item> getMap() {
+        return map;
+    }
 }
